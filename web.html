@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<ul class="container">
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+  <li class="item">
+    点赞！中国自主卫星电话正式放号，从此告别“不在服务
+  </li>
+
+
+
+</ul>
+<script>
+
+  $(function(){
+
+    //-------------  begin  -------------
+    $(".item:eq(2)").css("background","#eee");
+    $(".item:not(:last)").css("border-bottom" ,"1px dashed #ccc")
+
+    //------------  end  ---------------
+  })
+
+</script>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    width: 400px;
+    margin: 40px auto;
+    border: 2px solid #ccc;
+    padding: 0 20px;
+  }
+  .container .item{
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  .container .item span{
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  /*.container .item:not(:last-child){
+      border-bottom: 1px dashed #ccc;
+  }*/
+
+</style>
+</body>
+</html>
