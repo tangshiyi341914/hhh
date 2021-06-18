@@ -25,7 +25,7 @@ public class LoginFilter implements Filter {
         servletResponse.setContentType("text/html;charset=Utf-8");
         String url=req.getRequestURI();
         if (url.contains("/validate")||url.contains("/addUser")||url.contains("login.jsp")||url.endsWith(".css")||url.endsWith(".js")||url.endsWith(".jpg")
-                ||url.contains("register.jsp")||url.equals("/")||url.contains("changepassword.jsp")||url.contains("/change")){
+                ||url.endsWith(".png")||url.endsWith(".ico")||url.contains("register.jsp")||url.equals("/")||url.contains("changepassword.jsp")||url.contains("/change")){
             filterChain.doFilter(req,resp);
         }
         else if (req.getSession().getAttribute("loginUser")==null){
